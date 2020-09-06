@@ -1,0 +1,22 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Translucent_Glass_Gold
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 0.996078 0.101961
+Ks 0.330000 0.330000 0.330000
+d 0.600000
+map_Kd statek5/Translucent_Glass_Gold.jpg
+
+newmtl IMG_0682
+Ka 0.000000 0.000000 0.000000
+Kd 0.501961 0.501961 0.501961
+Ks 0.000000 0.000000 0.000000
+map_Kd statek5/IMG_0682.jpg
+
