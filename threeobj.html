@@ -229,13 +229,13 @@
 				// add layers of model 
 				new THREE.MTLLoader()
 					.setPath( './babylon/' )
-					.load( 'strecha.mtl', function ( materials ) 
+					.load( 'statek5.mtl', function ( materials ) 
           {      
 						materials.preload();
 						new THREE.OBJLoader()
 							.setMaterials( materials )
 							.setPath( './babylon/' )
-							.load( 'strecha.obj', function ( object ) 
+							.load( 'statek5.obj', function ( object ) 
               {
 								object.position.y = 0;
                 ob1=object
