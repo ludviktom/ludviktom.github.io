@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Petra Hejduková" />
-    <meta name="keywords" content="DP, web, Sedlec" />
-    <meta name="description" content="Webova stránka k diplové práci" />
-    <title>Vizualizace objektu Sedlec</title>
+    <meta name="author" content="Jana Tomášková" />
+    <meta name="keywords" content="BP, web, vizualizace" />
+    <meta name="description" content="Webová stránka k bakalářské práci" />
+    <title>Vizualizace bakalářské práce</title>
     <script type="application/x-javascript">
       addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false);
       function hideURLbar() {window.scrollTo(0,1);}
@@ -148,7 +148,7 @@
   </head>
   <body>
     <header>     
-      <h1 class="intro"><span>Vizualizace usedlosti Sedlec-Křešice</span></h1>
+      <h1 class="intro"><span>Vizualizace Hamousova statku</span></h1>
     </header>
     <div class="navbar">
       <a href="./main.html">Hlavní stránka</a>
@@ -168,18 +168,13 @@
       </div>
       <div class="dropdown">
         <button class="dropbtn">
-          Vizualizace DP
+          Vizualizace BP
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="./babylon.html">Babylon.js</a>
-          <a href="./three.html">Three.js - DAE</a>
-         <a href="./threeobj.html">Three.js - OBJ</a>
+          <a href="./threeobj.html">Three.js - OBJ</a>
         </div>
       </div>
-      <a href="http://venkov.fsv.cvut.cz/projekt/index.html"
-        >Informace o projektu
-      </a>
     </div>
     
     <h3>Vizualizace modelu ve formátu OBJ v rozhraní Three.js</h3>
@@ -189,7 +184,7 @@
 
     <div class="footer">
       <img src="cvut_white.png" alt="logo_cvut" />
-      <p>Vyhotovila Bc. Petra Hejduková v rámci diplomové práce 2019</p>
+      <p>Vyhotovila Jana Tomášková v rámci bakalářské práce 2020</p>
     </div>
     		<script>
 
@@ -229,13 +224,13 @@
 				// add layers of model 
 				new THREE.MTLLoader()
 					.setPath( './babylon/' )
-					.load( 'statek5.mtl', function ( materials ) 
+					.load( 'statek6-tomas.mtl', function ( materials ) 
           {      
 						materials.preload();
 						new THREE.OBJLoader()
 							.setMaterials( materials )
 							.setPath( './babylon/' )
-							.load( 'statek5.obj', function ( object ) 
+							.load( 'statek6-tomas.obj', function ( object ) 
               {
 								object.position.y = 0;
                 ob1=object
@@ -245,13 +240,13 @@
 
 				new THREE.MTLLoader()
 					.setPath( './babylon/' )
-					.load( 'interier2pp.mtl', function ( materials ) 
+					.load( 'statek6-tomas2.mtl', function ( materials ) 
           {
 						materials.preload();
 						new THREE.OBJLoader()
 							.setMaterials( materials )
 							.setPath( './babylon/' )
-							.load( 'interier2pp.obj', function ( object ) 
+							.load( 'statek6-tomas2.obj', function ( object ) 
               {
                 ob2=object
 								object.position.y = 0;
@@ -321,7 +316,7 @@
 
                var BT1 = document.createElement("button")
                         BT1.id = "ShowHidemyMeshesOne"
-                        BT1.textContent = "Střecha"
+                        BT1.textContent = "Dolní komora"
                         BT1.style.backgroundColor = "green"
                         BT1.style.display = "block"
                         BT1.style.width = "100%"
@@ -336,7 +331,7 @@
 
                 var BT2 = document.createElement("button")
                         BT2.id = "ShowHidemyMeshesTwo"
-                        BT2.textContent = "Příčky nahoře"
+                        BT2.textContent = "Horní komora"
                         BT2.style.backgroundColor = "green"
                         BT2.style.display = "block"
                         BT2.style.width = "100%"
@@ -381,7 +376,7 @@
                         
 
 
-        //rednering
+        //rendering
 			  renderer = new THREE.WebGLRenderer( { antialias: true } );
         renderer.setClearColor( 0xffffff );
 				renderer.setPixelRatio( window.devicePixelRatio );
