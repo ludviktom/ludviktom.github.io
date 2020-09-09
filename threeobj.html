@@ -191,7 +191,7 @@
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
      var container, stats, clock, controls;
 			var camera, scene, renderer;
-      var ob1,ob2,ob3,ob4;
+      var ob1,ob2,ob3,ob4,ob5,ob6,ob7,ob8,ob9,ob10;
 
 			init();
 			animate();
@@ -287,8 +287,99 @@
 								scene.add( object );
 							},  );
 					} );
-           
-                     
+				
+				new THREE.MTLLoader()
+					.setPath( './babylon/' )
+					.load( 'interier1pp.mtl', function ( materials )
+           {
+						materials.preload();
+						new THREE.OBJLoader()
+							.setMaterials( materials )
+							.setPath( './babylon/' )
+							.load( 'interier1pp.obj', function ( object )
+               { 
+								object.position.y = 0;
+                ob5=object   
+								scene.add( object );
+							},  );
+					} );
+           new THREE.MTLLoader()
+					.setPath( './babylon/' )
+					.load( 'interier1pp.mtl', function ( materials )
+           {
+						materials.preload();
+						new THREE.OBJLoader()
+							.setMaterials( materials )
+							.setPath( './babylon/' )
+							.load( 'interier1pp.obj', function ( object )
+               { 
+								object.position.y = 0;
+                ob6=object   
+								scene.add( object );
+							},  );
+					} );
+				new THREE.MTLLoader()
+					.setPath( './babylon/' )
+					.load( 'interier1pp.mtl', function ( materials )
+           {
+						materials.preload();
+						new THREE.OBJLoader()
+							.setMaterials( materials )
+							.setPath( './babylon/' )
+							.load( 'interier1pp.obj', function ( object )
+               { 
+								object.position.y = 0;
+                ob7=object   
+								scene.add( object );
+							},  );
+					} );
+                     new THREE.MTLLoader()
+					.setPath( './babylon/' )
+					.load( 'interier1pp.mtl', function ( materials )
+           {
+						materials.preload();
+						new THREE.OBJLoader()
+							.setMaterials( materials )
+							.setPath( './babylon/' )
+							.load( 'interier1pp.obj', function ( object )
+               { 
+								object.position.y = 0;
+                ob8=object   
+								scene.add( object );
+							},  );
+					} );
+				new THREE.MTLLoader()
+					.setPath( './babylon/' )
+					.load( 'interier1pp.mtl', function ( materials )
+           {
+						materials.preload();
+						new THREE.OBJLoader()
+							.setMaterials( materials )
+							.setPath( './babylon/' )
+							.load( 'interier1pp.obj', function ( object )
+               { 
+								object.position.y = 0;
+                ob9=object   
+								scene.add( object );
+							},  );
+					} );
+				new THREE.MTLLoader()
+					.setPath( './babylon/' )
+					.load( 'interier1pp.mtl', function ( materials )
+           {
+						materials.preload();
+						new THREE.OBJLoader()
+							.setMaterials( materials )
+							.setPath( './babylon/' )
+							.load( 'interier1pp.obj', function ( object )
+               { 
+								object.position.y = 0;
+                ob10=object   
+								scene.add( object );
+							},  );
+					} );
+				
+				
                var buttonbox = document.createElement("div")
                         buttonbox.id = "buttonbox"
                         buttonbox.style.position = "absolute"
@@ -373,6 +464,21 @@
                                           enable=ob4.visible
                           BT4.style.backgroundColor = enable ? "green" : "red"
                         }    
+				
+				var BT5 = document.createElement("button")
+                        BT5.id = "ShowHidemyMeshesThree"
+                        BT5.textContent = "Příčky dole"
+                        BT5.style.backgroundColor = "green"
+                        BT5.style.display = "block"
+                        BT5.style.width = "100%"
+                        BT5.style.fontSize = "1.1em"
+                        buttonbox.appendChild(BT5)
+                        BT5.onclick = function() {
+                          // Show/Hide myMeshThree
+                            (ob5.visible)?ob5.visible=false:ob5.visible=true
+                                          enable=ob5.visible
+                          BT5.style.backgroundColor = enable ? "green" : "red"
+                        } 
                         
 
 
