@@ -205,7 +205,7 @@
         
         //camera
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000000 );
-				camera.position.set( -5, -0.6, -9.5 );    
+				camera.position.set( -30, -0.6, -9.5 );    
         scene.add( camera );   
 
            
@@ -488,11 +488,11 @@
                         BT6.style.width = "100%"
                         BT6.style.fontSize = "1.1em"
                         buttonbox.appendChild(BT5)
-                        BT5.onclick = function() {
+                        BT6.onclick = function() {
                           // Show/Hide myMeshThree
-                            (ob5.visible)?ob5.visible=false:ob5.visible=true
-                                          enable=ob5.visible
-                          BT5.style.backgroundColor = enable ? "green" : "red"
+                            (ob6.visible)?ob6.visible=false:ob6.visible=true
+                                          enable=ob6.visible
+                          BT6.style.backgroundColor = enable ? "green" : "red"
                         } 
 		
 				
