@@ -205,7 +205,7 @@
         
         //camera
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000000 );
-				camera.position.set( -100, -0.6, -9.5 );    
+				camera.position.set( -5, -0.6, -9.5 );    
         scene.add( camera );   
 
            
@@ -465,7 +465,7 @@
                           BT4.style.backgroundColor = enable ? "green" : "red"
                         }    
 				
-				var BT5 = document.createElement("button")
+		var BT5 = document.createElement("button")
                         BT5.id = "ShowHidemyMeshesThree"
                         BT5.textContent = "Příčky dole"
                         BT5.style.backgroundColor = "green"
@@ -479,9 +479,81 @@
                                           enable=ob5.visible
                           BT5.style.backgroundColor = enable ? "green" : "red"
                         } 
-                        
+                 
+		var BT6 = document.createElement("button")
+                        BT6.id = "ShowHidemyMeshesThree"
+                        BT6.textContent = "Příčky dole"
+                        BT6.style.backgroundColor = "green"
+                        BT6.style.display = "block"
+                        BT6.style.width = "100%"
+                        BT6.style.fontSize = "1.1em"
+                        buttonbox.appendChild(BT5)
+                        BT5.onclick = function() {
+                          // Show/Hide myMeshThree
+                            (ob5.visible)?ob5.visible=false:ob5.visible=true
+                                          enable=ob5.visible
+                          BT5.style.backgroundColor = enable ? "green" : "red"
+                        } 
+		
+				
+		var BT7 = document.createElement("button")
+                        BT7.id = "ShowHidemyMeshesThree"
+                        BT7.textContent = "Příčky dole"
+                        BT7.style.backgroundColor = "green"
+                        BT7.style.display = "block"
+                        BT7.style.width = "100%"
+                        BT7.style.fontSize = "1.1em"
+                        buttonbox.appendChild(BT5)
+                        BT7.onclick = function() {
+                          // Show/Hide myMeshThree
+                            (ob7.visible)?ob7.visible=false:ob7.visible=true
+                                          enable=ob7.visible
+                          BT7.style.backgroundColor = enable ? "green" : "red"
+                        } 
+				
+		var BT8 = document.createElement("button")
+                        BT8.id = "ShowHidemyMeshesThree"
+                        BT8.textContent = "Příčky dole"
+                        BT8.style.backgroundColor = "green"
+                        BT8.style.display = "block"
+                        BT8.style.width = "100%"
+                        BT8.style.fontSize = "1.1em"
+                        buttonbox.appendChild(BT8)
+                        BT8.onclick = function() {
+                          // Show/Hide myMeshThree
+                            (ob8.visible)?ob8.visible=false:ob8.visible=true
+                                          enable=ob8.visible
+                          BT8.style.backgroundColor = enable ? "green" : "red"
+                        } 
 
-
+		var BT9 = document.createElement("button")
+                        BT9.id = "ShowHidemyMeshesThree"
+                        BT9.textContent = "Příčky dole"
+                        BT9.style.backgroundColor = "green"
+                        BT9.style.display = "block"
+                        BT9.style.width = "100%"
+                        BT9.style.fontSize = "1.1em"
+                        buttonbox.appendChild(BT5)
+                        BT9.onclick = function() {
+                          // Show/Hide myMeshThree
+                            (ob9.visible)?ob9.visible=false:ob9.visible=true
+                                          enable=ob9.visible
+                          BT9.style.backgroundColor = enable ? "green" : "red"
+                        } 
+		var BT10 = document.createElement("button")
+                        BT10.id = "ShowHidemyMeshesThree"
+                        BT10.textContent = "Příčky dole"
+                        BT10.style.backgroundColor = "green"
+                        BT10.style.display = "block"
+                        BT10.style.width = "100%"
+                        BT10.style.fontSize = "1.1em"
+                        buttonbox.appendChild(BT6)
+                        BT10.onclick = function() {
+                          // Show/Hide myMeshThree
+                            (ob10.visible)?ob10.visible=false:ob10.visible=true
+                                          enable=ob10.visible
+                          BT10.style.backgroundColor = enable ? "green" : "red"
+                        } 
         //rendering
 			  renderer = new THREE.WebGLRenderer( { antialias: true } );
         renderer.setClearColor( 0xffffff );
